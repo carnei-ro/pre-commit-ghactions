@@ -1,0 +1,8 @@
+- id: action_docs
+  name: Action Docs
+  description:
+    Inserts input and output documentation into README.md (using action-docs).
+  require_serial: true
+  entry: hooks/action_docs.sh
+  language: script
+  files: action\.(yml|yaml)
