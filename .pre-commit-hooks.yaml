@@ -5,4 +5,4 @@
   require_serial: true
   entry: hooks/action_docs.sh
   language: script
-  files: action\.(yml|yaml)
+  files: ''

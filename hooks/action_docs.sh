@@ -97,7 +97,10 @@ function action_docs {
     # If file still not exist - skip dir
     [[ ! -f "$text_file" ]] && popd > /dev/null && continue
 
-    action-docs $args
+    # TODO: make it better lol
+    for SOURCE in $(ls -1 | grep -Ei '(.yml|.yaml)'); do
+      action-docs --source="$SOURCE" $args
+    done
 
     popd > /dev/null
   done
